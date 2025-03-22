@@ -37,8 +37,9 @@ function performAction(action) {
             output = array.filter(item => item !== filterValue);
             break;
         case 'map':
-            const mapValue = prompt("Enter a value to append to each element:");
-            output = array.map(item => item + mapValue);
+            const mapValue = prompt("Enter a value to append to each element (or a number to multiply):");
+            const isNumber = !isNaN(mapValue);
+            output = array.map(item => isNumber ? item * mapValue : item + mapValue);
             break;
         case 'reduce':
             output = array.reduce((acc, curr) => acc + curr, '');
