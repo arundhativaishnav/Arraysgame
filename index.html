@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Function Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Array Function Game</h1>
+        <input type="text" id="arrayInput" placeholder="Enter array elements separated by commas">
+        <div class="buttons">
+            <button onclick="performAction('push')">Push</button>
+            <button onclick="performAction('pop')">Pop</button>
+            <button onclick="performAction('shift')">Shift</button>
+            <button onclick="performAction('unshift')">Unshift</button>
+            <button onclick="performAction('sort')">Sort</button>
+            <button onclick="performAction('reverse')">Reverse</button>
+            <button onclick="performAction('filter')">Filter</button>
+            <button onclick="performAction('map')">Map</button>
+            <button onclick="performAction('reduce')">Reduce</button>
+        </div>
+        <div class="output">
+            <h2>Output:</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
